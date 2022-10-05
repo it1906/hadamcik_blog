@@ -1,28 +1,43 @@
-# Next.js + Tailwind CSS Example
+# Maturitní projekt
+V rámci závěrečného projektu jsem se rozhodl vybudovat webový blog zaměřený na recepty, pohyb a obecně fitness. 
+Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Cíle
+- React design
+- Možnost vypisovat příspěvky
+- Třídit příspěvky podle kategorií
+- Možnost přidat komentář
+- Možnost přihlášení
+Navíc:
+- Lokalizace
+- Autentifikace pomocí Google účtu
 
-## Deploy your own
+## Konzultanti
+ - p.uč. Lučný
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Použité technologie
+ React, Strapi, Bootstrap
+ 
+## Časový harmonogram
+### Září
+  Studování Reactu, doplnění dat do backendu✔️
+  
+### Říjen 
+1. Polovina:<br/> Začít psát frontend✔️<br/> Datový model <br/>
+2. Polovina:<br/> Dokončit první draft<br/> 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Listopad
+1. Polovina:<br/> Toto je období pro práci ze sekce "navíc", dokončování frontendu
+2. Polovina:<br/> Dostat aplikaci do obhajobyschopného stavu. Dokončit frontend.
 
-## How to use
+### Prosinec 
+1. Polovina:<br/> Práce na dokumentaci.
+2. Polovina:<br/> Dokončit dokumentaci. Nechat si čas na případné last minute touches.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### Problémy
+  Mapování skrze pole receptů. 
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-"# hadamcik_blog" 
+### Zdroje
+V průběhu práce budu zde přidávat zdroje, ze kterých jsem čerpal.<br />
+- React dokumentace. ReactJS [online]. Spojené státy americké: Meta Platforms, 2013 [cit. 2022-10-04]. Dostupné z: https://reactjs.org/docs/getting-started.html
+- React Tutorial. W3schools [online]. Norsko: Refsnes Data, 2014 [cit. 2022-10-04]. Dostupné z: https://www.w3schools.com/react/default.asp
