@@ -4,11 +4,12 @@ Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
 
 ## Cíle
 - React design
+- GraphCMS backend
 - Možnost vypisovat příspěvky
 - Třídit příspěvky podle kategorií
 - Možnost přidat komentář
 - Možnost přihlášení<br/>
-Navíc:
+#### Navíc:
 - Lokalizace
 - Autentifikace pomocí Google účtu
 
@@ -16,7 +17,7 @@ Navíc:
  - p.uč. Lučný
 
 ## Použité technologie
- React, Strapi, Bootstrap
+ React, GraphCMS, Bootstrap, Tailwind
  
 ## Časový harmonogram
 ### Září
