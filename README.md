@@ -7,7 +7,7 @@ Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
 - Možnost vypisovat příspěvky
 - Třídit příspěvky podle kategorií
 - Možnost přidat komentář
-- Možnost přihlášení
+- Možnost přihlášení<br/>
 Navíc:
 - Lokalizace
 - Autentifikace pomocí Google účtu
