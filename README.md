@@ -17,7 +17,7 @@ Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
  - p.uč. Lučný
 
 ## Použité technologie
- React, GraphCMS, Bootstrap, Tailwind
+ React/NextJS, GraphCMS, Tailwind
  
 ## Časový harmonogram
 ### Září
