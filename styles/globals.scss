@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   &:before{
     content:'';
     content: "";
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right bottom, #ffffff, #ebdfd7);
-    // background: #D3D3D3;
-    //background-image: url("../public/bg.jpg");
     position: fixed;
     left: 0;
     top: 0;

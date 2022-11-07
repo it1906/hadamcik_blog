@@ -10,7 +10,7 @@ const PostCard = ({post}) => {
           <div className='relative overflow-hidden pb-80 mb-6 grid justify-items-center'>
             <img src={post.featuredImage.url} alt={post.title} className='object-top absolute h-80 w-full object-cover rounded-t-lg' />
           </div>
-          <h1 className='transition duration-400 text-center mb-8 cursor-pointer mt-6 ml-6 hover:text-orange-500 text-3xl font-semibold hover:underline underline-offset-4 decoration-3 capitalize '>
+          <h1 className='transition duration-400 text-center mb-8 cursor-pointer mt-6 ml-6 hover:text-orange-500 text-3xl font-semibold capitalize '>
           <Link href={`/post/${post.slug}`}>{post.title}</Link>
         </h1>
           <div className='block lg:flex text-center items-center justify-center mb-8 w-full col-sm-8'>

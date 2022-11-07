@@ -5,6 +5,7 @@ import { getCategories } from '../services'
 
 
 
+
 const Header = () => {
     const [categories, setCategories] = useState([]);
 
@@ -26,9 +27,12 @@ const Header = () => {
                 <div className='hidden md:float-left md:contents'>
                     <div className='md:float-right mt-2 align-middle text-white ml-3 font-semibold cursor-pointer p-2 transition duration-300 ease-in-out
                             bg-black bg-gradient-to-r hover:from-orange-600 hover:to-orange-400 transform hover:-translate-y-2 rounded-lg'>
-                        <span>
-                            Contact me
-                        </span>
+                            <Link href={`../pages/aboutme.js`}>
+                                <span>
+                                    About me
+                                </span>
+                            </Link>
+ 
                     </div>
                     {categories.map((category) => (
                         <Link key={category.slug} href={`/category/${category.slug}`}>

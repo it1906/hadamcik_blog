@@ -10,3 +10,4 @@ export{default as PostDetail} from './PostDetail';
 export{default as Loader} from './Loader';
 export{default as Subscribe} from './Subscribe';
 export{default as Slider} from './Slider';
+export{default as Footer} from './Footer';
