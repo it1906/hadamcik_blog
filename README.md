@@ -42,3 +42,5 @@ Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
 V průběhu práce budu zde přidávat zdroje, ze kterých jsem čerpal.<br />
 - React dokumentace. ReactJS [online]. Spojené státy americké: Meta Platforms, 2013 [cit. 2022-10-04]. Dostupné z: https://reactjs.org/docs/getting-started.html
 - React Tutorial. W3schools [online]. Norsko: Refsnes Data, 2014 [cit. 2022-10-04]. Dostupné z: https://www.w3schools.com/react/default.asp
+- Getting Started: Existing Project. NextAuth.js [online]. Nov 6, 2022 [cit. 2022-11-08]. Dostupné z: https://next-auth.js.org/getting-started/example
+- Build and Deploy THE BEST Modern Blog App with React [online]. 2021 [cit. 2022-11-08]. Dostupné z: https://www.youtube.com/watch?v=HYv55DhgTuA
