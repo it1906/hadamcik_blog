@@ -1,15 +1,18 @@
 import React from 'react'
 import { useRouter } from 'next/router';
+import { useSession, signIn, signOut } from "next-auth/react"
 
 import { getPosts, getPostDetails } from '../../services';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader, Subscribe } from '../../components'
 
 const PostDetails = ({ post }) => {
   const router = useRouter()
+  const { data: session } = useSession()
 
   if (router.isFallback) {
     return <Loader />
   }
+  
 
   return (
     <div className='container mx-auto px-10 mb-8'>

@@ -11,3 +11,4 @@ export{default as Loader} from './Loader';
 export{default as Subscribe} from './Subscribe';
 export{default as Slider} from './Slider';
 export{default as Footer} from './Footer';
+export{default as LoginButton} from './login-btn.jsx'
