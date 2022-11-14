@@ -7,6 +7,9 @@
   },
   "dependencies": {
     "eslint-config-next": "^13.0.2",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.3.4",
+    "formik": "^2.2.9",
     "framer-motion": "^7.6.5",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
@@ -14,6 +17,7 @@
     "moment": "^2.29.4",
     "next": "^13.0.2",
     "next-auth": "^4.16.4",
+    "nodemailer": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",

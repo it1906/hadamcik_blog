@@ -12,3 +12,4 @@ export{default as Subscribe} from './Subscribe';
 export{default as Slider} from './Slider';
 export{default as Footer} from './Footer';
 export{default as LoginButton} from './login-btn.jsx'
+export{default as Dropdown} from './Dropdown'

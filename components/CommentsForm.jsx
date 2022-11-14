@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useSession} from "next-auth/react"
 
 import { submitComment } from '../services';
 
 const CommentsForm = ({ slug }) => {
-
+  const { data: session } = useSession()
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
