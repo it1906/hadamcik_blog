@@ -1,8 +1,8 @@
-import React from 'react';
-
+import React from 'react'
 import moment from 'moment';
 
 const PostDetail = ({ post }) => {
+
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -49,24 +49,16 @@ const PostDetail = ({ post }) => {
           <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover rounded-t-lg" />
         </div>
         <div className="px-4">
-          
-          <div className="flex items-center mb-8 w-full flex justify-end">
-            <div className='text-black'>{post.categories.name}</div>
-            <div className="font-medium text-gray-400 italic mr-8">
-              <span className="align-middle">{moment(post.createdAt).format('MM. DD. YYYY')}</span>
-            </div>
+          <div className="flex flex-wrap justify-between">
+            <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto items-center">
-              <img
-                alt={post.author.name}
-                height="30px"
-                width="30px"
-                className="align-middle rounded-lg"
-                src={post.author.photo.url}
-              />
-              <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">{post.author.name}</p>
+              <span className='text-sm'>
+                <p>{post.author.name}</p>
+                <p className='italic text-gray-500'>{moment(post.createdAt).format('MM. DD. YYYY')}</p>              
+              </span>
             </div>
           </div>
-          <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+          
           {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
 

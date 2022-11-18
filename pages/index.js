@@ -11,6 +11,7 @@ export default function Home({posts}) {
       <title>JH | blog</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <Slider/>
     <div className='grid grid-cols-1 lg:grid-cols-10 gap-12 '>
       <div className='lg:col-span-6 col-span-1'>
           {posts.map((post)=> <PostCard post={post.node}  key={post.title}/>)}
