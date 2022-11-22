@@ -12,37 +12,32 @@ import { LoginButton } from '.'
 
 const Header = () => {
     const [categories, setCategories] = useState([]);
-    const { data: session } = useSession()
 
 
     useEffect(() => {
         getCategories()
             .then((newCategories) => setCategories(newCategories))
     }, []);
-    const [showMe, setShowMe] = useState(false);
-    function toggle(){
-        setShowMe(!showMe);
-  }
 
     return (
-        <div className='container mx-auto px-10 mb-8'>
-            <div className='w-full inline-block pt-8 border-b border-black'>
+        <div className='mb-8 px-5 bg-gray-100 shadow-sm'>
+            <div className='inline-block pt-5 w-full'>
                 <div className='md:float-left block'>
                     <Link href="/">
-                        <span className='cursor-pointer text-2xl bg-black rounded-lg text-white p-2 '>
+                        <span className='cursor-pointer text-2xl'>
                             JH | blog
                         </span>
                     </Link>
                 </div>
                 <div className='hidden md:float-left md:contents'>
                     <div className='text-md font-medium text-center flex justify-end'>
-                        <ul className='flex flex-wrap -mb-px'>
+                        <ul className='flex flex-wrap -mb-px relative'>
                             <li className='-translate-y-1'>
                                 <Link href='/'>
-                                    <span className='inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 flex'><HiHome className='mr-1 w-5 h-4'/>Home</span>
+                                    <span className='inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 flex '><HiHome className='w-5 h-4'/>Home</span>
                                 </Link>
                             </li>
-                            <Dropdown/>
+                                <Dropdown/>
                             <li>
                                 <LoginButton/>
                             </li>

@@ -25,7 +25,7 @@ const Slider = ({categories, slug}) => {
   return (
     <div>
       <div>
-        <div className='flex grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8 border-b pb-8 border-black'>
+        <div className='flex grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8  pb-8'>
         {relatedPosts.map((post)=>(
             <div className='lg:col-span-4 lg:inline-block hidden'>
               <Link href={`/post/${post.slug}`}>

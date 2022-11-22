@@ -8,8 +8,8 @@ export{default as CommentsForm} from './CommentsForm';
 export{default as Comments} from './Comments';
 export{default as PostDetail} from './PostDetail';
 export{default as Loader} from './Loader';
-export{default as Subscribe} from './Subscribe';
 export{default as Slider} from './Slider';
 export{default as Footer} from './Footer';
-export{default as LoginButton} from './login-btn.jsx'
-export{default as Dropdown} from './Dropdown'
+export{default as LoginButton} from './login-btn.jsx';
+export{default as Dropdown} from './Dropdown';
+export{default as SidePosts} from './SidePosts.jsx';

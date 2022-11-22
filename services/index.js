@@ -48,6 +48,7 @@ export const getSimilarPosts = async (categories, slug) => {
           last: 3
         ) {
           title
+          exerpt
           featuredImage {
             url
           }

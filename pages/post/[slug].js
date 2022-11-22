@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useSession, signIn, signOut } from "next-auth/react"
 
 import { getPosts, getPostDetails } from '../../services';
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader, Subscribe } from '../../components'
+import { PostDetail, PostWidget, Comments, CommentsForm, Loader,  SidePosts } from '../../components'
 
 const PostDetails = ({ post }) => {
   const router = useRouter()
@@ -19,15 +19,13 @@ const PostDetails = ({ post }) => {
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='col-span-1 lg:col-span-8'>
           <PostDetail post={post} />
-          {/*<Author author={post.author} />*/}
           <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
           <Comments slug={post.slug} />
           <CommentsForm slug={post.slug} />
         </div>
         <div className='col-span-1 lg:col-span-4'>
           <div className='relative lg:sticky top-8'>
-            <Subscribe/>
-            {/*<Categories />*/}
+            <SidePosts />
           </div>
         </div>
       </div>
