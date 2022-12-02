@@ -1,23 +1,13 @@
 import Link from 'next/link'
-import React, { useState, useEffect, useRef } from 'react'
-import { getCategories } from '../services'
+import React from 'react'
 import {HiHome} from 'react-icons/hi'
-import {FaUserAlt} from 'react-icons/fa'
 import Dropdown from './Dropdown'
-import { useSession, signIn, signOut } from "next-auth/react"
 import { LoginButton } from '.'
 
 
 
 
 const Header = () => {
-    const [categories, setCategories] = useState([]);
-
-
-    useEffect(() => {
-        getCategories()
-            .then((newCategories) => setCategories(newCategories))
-    }, []);
 
     return (
         <div className='mb-8 px-5 bg-gray-100 shadow-sm'>

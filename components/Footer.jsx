@@ -5,11 +5,12 @@ import {CiFacebook} from 'react-icons/ci'
 
 const Footer = () => {
   return (
-    <div className='p-4 bg-gray-900 rounded-t-md shadow md:flex md:items-center md:justify-between md:p-6'>
-        <div className='text-white'>
+    <div className=''>
+      <div className='bg-gray-100 md:flex md:items-center md:justify-between md:p-2'>
+        <div>
           Contacts: hanishadamcik@seznam.cz
         </div>
-        <div className='justify-end text-white text-2xl'>
+        <div className='justify-end text-2xl flex'>
           <div className='mb-2'>
             <Link href='https://www.instagram.com/jan_hadamcik/'>
               <AiOutlineInstagram/>
@@ -21,7 +22,9 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+      </div>
     </div>
+
   )
 }
 

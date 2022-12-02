@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { useSession} from "next-auth/react"
-
+import {BsArrowRight} from 'react-icons/bs'
 import { submitComment } from '../services';
 
 const CommentsForm = ({ slug }) => {
-  const { data: session } = useSession()
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -51,48 +49,49 @@ const CommentsForm = ({ slug }) => {
   }
 
   return (
-    <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8'>
-      <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Enter the discussion</h3>
-        <div className='grid grid-cols-1 gap-4 mb-4'>
+    <div className='pb-12 mb-8'>
+        <div className='grid grid-cols-1 gap-4 mb-4 border rounded-md border-gray-100'>
           <textarea
             ref={commentEl}
-            className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
-            placeholder='Comment'
+            className='p-4 resize-none border-none outline-none w-full focus:ring-0 focus:shadow-sm focus:bg-gray-100 rounded-md text-gray-700 transition duration-500 ease-in-out '
+            placeholder='Comment...'
             name='comment'
           />
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
-          <input
+        <div className='grid grid-cols-2 gap-4 mb-4 text-gray-700 text-sm'>
+            <input
             type='text'
             ref={nameEl}
-            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
+            className='outline-none border-gray-100 rounded-md focus:ring-0 bg-white focus:bg-gray-100 focus:border-gray-100 focus:shadow-sm transition duration-500 ease-in-out'
             placeholder='Name'
             name='name'
-          />
-          <input
+            />
+            <input
             type='text'
             ref={emailEL}
-            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
+            className='outline-none border-gray-100 rounded-md focus:ring-0 bg-white focus:bg-gray-100 focus:border-gray-100 focus:shadow-sm transition duration-500 ease-in-out'
             placeholder='Email'
             name='email'
-          />
+            />
         </div>
-        <div className='grid grid-cols-1 gap-4 mb-4'>
-          <div>
+        <div className='grid grid-cols-2 gap-4 mb-4'>
+          <div className='col-span-1'>
             <input
-              ref={storeDataEl} checked type='checkbox' id='storeData' name='storeData' value='true' className='ml-1 h-3 w-3 accent-orange-600 cursor-pointer' />
+              ref={storeDataEl} type='checkbox' id='storeData' name='storeData' value='true' className='focus:ring-0 rounded-full p-2' checked/>
             <label className='text-gray-500 cursor-pointer ml-2 ' htmlFor='storeData'> Save my e-mail and name for the next time I want to comment</label>
           </div>
+          <div className='col-span-1'>
+            <div className='float-right'>
+              <button
+                type='button'
+                onClick={handleCommentSubmission}
+                className='flex transition duration-500 transform inline-block bg-black bg-gradient-to-r hover:from-orange-600 hover:to-orange-400 text-lg font-medium rounded-lg text-white px-6 py-3 cursor-pointer'>
+                Send <BsArrowRight className='ml-2 text-xl translate-y-1'/>
+              </button>
+            </div>
         </div>
         {error && <p className='text-xs text-red-500'>All fields are required.</p>}
-        <div className='mt-8'>
-          <button
-            type='button'
-            onClick={handleCommentSubmission}
-
-            className='transition duration-500 transform hover:-translate-y-1 inline-block bg-black bg-gradient-to-r hover:from-orange-600 hover:to-orange-400 text-lg font-medium rounded-full text-white px-6 py-3 cursor-pointer'>
-            Post comment
-          </button>
+        
           {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>Comment submited for review.</span>}
         </div>
     </div>

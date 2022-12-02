@@ -52,7 +52,7 @@ export default function Component() {
         <span onClick={toggle} className='p-2 inline-block bg-black text-white rounded-full text-md translate-y-1 cursor-pointer bg-gradient-to-r hover:from-orange-600 hover:to-orange-400'>
           <FaUserAlt />
         </span>
-        <div style={{ display: showMe ? "block" : "none" }}>
+        <div className="absolute z-10 right-1/2" style={{ display: showMe ? "block" : "none" }}>
           <ul className='bg-gray-900 text-gray-200 fixed z-10 p-5 rounded-lg'>
             <li className='flex justify-center p-4 rounded-full'>
               <FaUserAlt />

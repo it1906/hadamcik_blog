@@ -46,7 +46,7 @@ const PostDetail = ({ post }) => {
     <>
       <div className="pb-12 mb-8">
         <div className="relative overflow-hidden mb-6">
-          <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover" />
+          <img src={post.featuredImage.url} alt={post.title} className="object-top h-full w-full object-cover" />
         </div>
         <div className="px-4">
           <div className="flex flex-wrap justify-between">
@@ -54,7 +54,7 @@ const PostDetail = ({ post }) => {
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto items-center">
               <span className='text-sm'>
                 <p>{post.author.name}</p>
-                <p className='italic text-gray-500'>{moment(post.createdAt).format('MM. DD. YYYY')}</p>              
+                <p className='text-gray-500'>{moment(post.createdAt).format('MM. DD. YYYY')}</p>              
               </span>
             </div>
           </div>
