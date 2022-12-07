@@ -25,11 +25,11 @@ Mám v plánu použít **GraphCMS** pro backend a **React.js** pro frontend.
   
 ### Říjen 
 1. Polovina:<br/> Začít psát frontend✔️<br/> Datový model <br/>
-2. Polovina:<br/> Dokončit první draft<br/> 
+2. Polovina:<br/> Dokončit první draft<br/> ✔️
 
 ### Listopad
-1. Polovina:<br/> Toto je období pro práci ze sekce "navíc", dokončování frontendu
-2. Polovina:<br/> Dostat aplikaci do obhajobyschopného stavu. Dokončit frontend.
+1. Polovina:<br/> Toto je období pro práci ze sekce "navíc", dokončování frontendu✔️
+2. Polovina:<br/> Dostat aplikaci do obhajobyschopného stavu. Dokončit frontend.✔️
 
 ### Prosinec 
 1. Polovina:<br/> Práce na dokumentaci.
