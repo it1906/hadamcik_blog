@@ -77,7 +77,7 @@ const CommentsForm = ({ slug }) => {
         <div className='grid grid-cols-2 gap-4 mb-4'>
           <div className='col-span-1'>
             <input
-              ref={storeDataEl} type='checkbox' id='storeData' name='storeData' value='true' className='focus:ring-0 rounded-full p-2' checked/>
+              ref={storeDataEl} type='checkbox' id='storeData' name='storeData' value='true' className='focus:ring-0 rounded-full p-2' defaultChecked/>
             <label className='text-gray-500 cursor-pointer ml-2 ' htmlFor='storeData'> Save my e-mail and name for the next time I want to comment</label>
           </div>
           <div className='col-span-1'>

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
@@ -10,5 +11,9 @@ module.exports = {
         pathname: '/account123/**',
       },
     ],
+  },
+  publicRuntimeConfig: {
+    name: process.env.NAME,
+    description: process.env.DESCRIPTION,
   },
 }
